@@ -1,0 +1,23 @@
+#  поле "Имя"
+driver.find_element(By.NAME, "name").send_keys("Anhelina01")
+
+#  поле "Email"
+driver.find_element(By.XPATH, ".//fieldset[2]/div/div/input[@name='name']").send_keys("Anhelina01@ya.ru")
+
+#  поля "Пароль"
+driver.find_element(By.XPATH, ".//fieldset[3]/div/div/input[@name='Пароль']").send_keys("password1123")
+
+# Ввести email и пароль
+driver.find_element(By.XPATH, ".//fieldset[1]/div/div/input[@name='name']").send_keys("Anhelina01@ya.ru")
+driver.find_element(By.XPATH, ".//fieldset[2]/div/div/input[@name='Пароль']").send_keys("password1123")
+# Нажать кнопку "Войти"
+driver.find_element(By.XPATH, "//button[text()='Войти']").click()
+# Нажать кнопку "Личный Кабинет"
+driver.find_element(By.XPATH, "//p[text()='Личный Кабинет']").click()
+# Нажать кнопку "Выход"
+driver.find_element(By.XPATH, "//button[text()='Выход']").click()
+
+#XPath for Section Tabs
+//span[text()='Булки'], //span[text()='Соусы'], //span[text()='Начинки']
+#XPath for Headers
+//h2[text()='Булки'], //h2[text()='Соусы'], //h2[text()='Начинки']
