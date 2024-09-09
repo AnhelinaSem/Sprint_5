@@ -9,7 +9,3 @@ class Mestolocators:
     BYLKI_SECTION = By.XPATH, "//h2[text()='Булки']"
     SOYS_SECTION = By.XPATH, "//h2[text()='Соусы']"
     NACHINKA_SECTION = By.XPATH, "//h2[text()='Начинки']"
-
-
-    EMAIL_HEADER = By.XPATH, "//p[contains(@class, 'user')]"
-    LOGOUT_BUTTON = By.XPATH, "//button[contains(@class, 'logout')]"

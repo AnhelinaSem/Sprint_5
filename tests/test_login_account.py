@@ -67,7 +67,3 @@ class TestLogin:
 
         # Проверка успешного входа
         assert driver.current_url == "https://stellarburgers.nomoreparties.site/"
-
-
-
-

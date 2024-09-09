@@ -45,5 +45,3 @@ class TestClick:
         # Нажать кнопку Конструктор
         driver.find_element(By.XPATH, ".//li[1]/a/p[text()='Конструктор']").click()
         assert driver.current_url == "https://stellarburgers.nomoreparties.site/"
-
-

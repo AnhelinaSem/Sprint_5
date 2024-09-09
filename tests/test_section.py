@@ -3,7 +3,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from src.config import Config
 from src.locators import Mestolocators
 
-
 class TestSection:
 
     def test_section_soys(self, driver):
@@ -39,10 +38,3 @@ class TestSection:
         driver.find_element(*Mestolocators.NACHINKA_SECTION).click()
         WebDriverWait(driver, 10).until(EC.visibility_of_element_located((Mestolocators.NACHINKA_SECTION)))
         assert driver.find_element(*Mestolocators.NACHINKA_SECTION).is_displayed()
-
-
-
-
-
-
-
